@@ -39,6 +39,9 @@ gem 'devise'
 # form-awesome
 #In your application.css, include the css file:  *= require font-awesome
 gem "font-awesome-rails"
+
+gem 'gravatarify', '~> 3.0.0'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
