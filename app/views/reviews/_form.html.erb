@@ -1,0 +1,24 @@
+<%= simple_form_for(@review) do |f| %>
+  <%= f.error_notification %>
+  <div class="form-inputs">
+    <%= f.input :content, required: true, label: false, placeholder: "Please say something about this place.", input_html:{rows: "10"} %>
+    <%= f.hidden_field :place_id, required: true, value: @place.id %>
+    <%= f.hidden_field :score, reuqired: true%>
+    <div class="score"></div>
+  </div>
+  <br/>
+  <div class="form-actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>
+
+<script>
+	$(".score").raty(
+	{
+		starOn: "<%= image_path('star-on.png')%>",
+		starOff: "<%= image_path('star-off.png')%>",
+		target: "#review_score",
+		targetKeep: true,
+		targetType: "number"
+	});
+</script>
