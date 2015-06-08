@@ -1,6 +1,6 @@
 ## Readme
 
-This is my lastest code from learning [stuk.io](www.stuk.io).
+This is my lastest code from learning  at [stuk](http://stuk.io/)
 
 What made the learning process interesting is that, googlemap is completely blocked in mainland China, I have to test the code pushing the code to a remote computer and test them there. 
 
